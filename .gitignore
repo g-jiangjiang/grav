@@ -17,15 +17,15 @@ logs/*
 !logs/.*
 images/*
 !images/.*
-user/accounts/*
-!user/accounts/.*
-user/data/*
-!user/data/.*
-user/plugins/*
-!user/plugins/.*
-user/themes/*
-!user/themes/.*
-user/**/config/security.yaml
+#user/accounts/*
+#!user/accounts/.*
+#user/data/*
+#!user/data/.*
+#user/plugins/*
+#!user/plugins/.*
+#user/themes/*
+#!user/themes/.*
+#user/**/config/security.yaml
 
 # Environments
 .env
@@ -47,4 +47,4 @@ tests/_support/_generated/*
 tests/cache/*
 tests/error.log
 system/templates/testing/*
-/user/config/versions.yaml
+#/user/config/versions.yaml
