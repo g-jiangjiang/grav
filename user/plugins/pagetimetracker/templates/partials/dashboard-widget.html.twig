@@ -1,0 +1,20 @@
+{% if topPages|length > 0 %}
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>页面路径</th>
+                <th>访问时长 (秒)</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for page in topPages %}
+                <tr>
+                    <td>{{ page.path }}</td>
+                    <td>{{ page.duration }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>今日暂无访问数据</p>
+{% endif %}

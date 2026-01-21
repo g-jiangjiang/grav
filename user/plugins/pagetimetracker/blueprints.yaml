@@ -1,0 +1,24 @@
+name: Page Time Tracker
+version: 1.0.0
+description: Tracks page visit duration and displays top pages in dashboard
+author: Your Name
+homepage: https://example.com
+keywords: tracking, analytics, dashboard
+bugs: https://example.com/issues
+license: MIT
+
+grav: ">=1.7.0"
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin Status
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
