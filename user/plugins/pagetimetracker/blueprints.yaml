@@ -1,0 +1,22 @@
+name: Page Time Tracker
+version: 1.0.0
+type: plugin
+author: Your Name
+author_email: your@email.com
+author_url: https://yourwebsite.com
+description: Tracks page visit duration and displays top pages in dashboard
+license: MIT
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin Status
+      highlight: 1
+      default: 1
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
